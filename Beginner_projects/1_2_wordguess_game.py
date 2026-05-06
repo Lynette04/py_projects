@@ -26,11 +26,12 @@ def start_game():
     print("-----LET'S GUESS A WORD-----")
     #The program randomly picks a word from the list and the maximum chances for guessing is the length of the target word
     target = random.choice(words)
-    max_chances = len(target)
+    max_chances = len(target) + 1
     
     print(f"You have {max_chances} chances")
     print_legend()
     
+    print(f"\nThe word is {len(target)} letters long")
     chance= 1
     won = False #assuming the user has not guessed anything yet
     while chance<=max_chances:
