@@ -31,7 +31,9 @@ def start_game():
     print(f"You have {max_chances} chances")
     print_legend()
     
+    #to show user how long the word could be as a hint
     print(f"\nThe word is {len(target)} letters long")
+    
     chance= 1
     won = False #assuming the user has not guessed anything yet
     while chance<=max_chances:
